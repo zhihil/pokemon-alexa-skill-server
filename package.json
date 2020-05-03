@@ -2,6 +2,10 @@
   "name": "alexa-skill-pokemon-server",
   "version": "1.0.0",
   "description": "Web-server that handles request for the Pokemon Alexa Skill",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zhihil/pokemon-alexa-skill-server.git"
+  },
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,6 +21,9 @@
   "author": "Zhiheng Lu",
   "license": "ISC",
   "dependencies": {
+    "ask-sdk-core": "^2.8.0",
+    "ask-sdk-express-adapter": "^2.0.1",
+    "ask-sdk-model": "^1.28.0",
     "express": "^4.17.1",
     "nodemon": "^2.0.3"
   }
