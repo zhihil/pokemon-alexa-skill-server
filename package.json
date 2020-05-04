@@ -21,6 +21,7 @@
   "author": "Zhiheng Lu",
   "license": "ISC",
   "dependencies": {
+    "ask-sdk": "^2.8.0",
     "ask-sdk-core": "^2.8.0",
     "ask-sdk-express-adapter": "^2.0.1",
     "ask-sdk-model": "^1.28.0",

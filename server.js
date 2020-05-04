@@ -1,10 +1,8 @@
 const express = require("express");
-const app = express();
+const Alexa = require("ask-sdk-core");
+const handler = require("./handlers");
 
-app.use((req, res, next) => {
-  console.log("Your middleware is up and running!");
-  next();
-});
+const app = express();
 
 app.get("/", (req, res, next) => {
   res.status(200).send("Server is up and running!");
