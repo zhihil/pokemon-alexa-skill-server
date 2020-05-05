@@ -7,7 +7,7 @@ const CancelAndStopIntentHandler = {
     );
   },
   handle(handlerInput) {
-    const speechText = "Goodbye!";
+    const speechText = "Turning off the PokeDex. Goodbye!";
 
     return handlerInput.responseBuilder
       .speak(speechText)

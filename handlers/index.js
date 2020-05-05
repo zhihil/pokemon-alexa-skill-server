@@ -7,8 +7,6 @@ const PokemonInfoIntentHandler = require("./PokemonInfoIntentHandler");
 const PokemonTraitIntentHandler = require("./PokemonTraitIntentHandler");
 const HelpIntentHandler = require("./HelpIntentHandler");
 const ErrorHandler = require("./ErrorHandler");
-const YesIntentHandler = require("./YesIntentHandler");
-const NoIntentHandler = require("./NoIntentHandler");
 const RepeatIntentHandler = require("./RepeatIntentHandler");
 const FallbackIntentHandler = require("./FallbackIntentHandler");
 const NavigateHomeIntentHandler = require("./NavigateHomeIntentHandler");
@@ -22,8 +20,6 @@ skillBuilder
     LaunchRequestHandler,
     CancelAndStopIntentHandler,
     HelpIntentHandler,
-    YesIntentHandler,
-    NoIntentHandler,
     RepeatIntentHandler,
     FallbackIntentHandler,
     NavigateHomeIntentHandler
