@@ -1,29 +1,37 @@
+const Alexa = require("ask-sdk-core");
+const { ExpressAdapter } = require('ask-sdk-express-adapter');
+
 const CancelAndStopIntentHandler = require("./CancelAndStopIntentHandler");
 const LaunchRequestHandler = require("./LaunchRequestHandler");
-const HelloWorldIntentHandler = require("./HelloWorldIntentHandler");
+const PokemonIntentHandler = require("./PokemonIntentHandler");
 const HelpIntentHandler = require("./HelpIntentHandler");
-const SessionEndedRequestHandler = require("./SessionEndedRequestHandler");
 const ErrorHandler = require("./ErrorHandler");
+const YesIntentHandler = require("./YesIntentHandler");
+const NoIntentHandler = require("./NoIntentHandler");
+const RepeatIntentHandler = require("./RepeatIntentHandler");
+const FallbackIntentHandler = require("./FallbackIntentHandler");
+const NavigateHomeIntentHandler = require("./NavigateHomeIntentHandler");
 
-let skill;
+const skillBuilder = Alexa.SkillBuilders.custom();
 
-exports.handler = async function (event, context) {
-  console.log(`REQUEST++++${JSON.stringify(event)}`);
-  if (!skill) {
-    skill = Alexa.SkillBuilders.custom()
-      .addRequestHandlers(
-        LaunchRequestHandler,
-        HelloWorldIntentHandler,
-        HelpIntentHandler,
-        CancelAndStopIntentHandler,
-        SessionEndedRequestHandler,
-      )
-      .addErrorHandlers(ErrorHandler)
-      .create();
-  }
+skillBuilder
+  .addRequestHandlers(
+    PokemonIntentHandler,
+    LaunchRequestHandler,
+    CancelAndStopIntentHandler,
+    HelpIntentHandler,
+    YesIntentHandler,
+    NoIntentHandler,
+    RepeatIntentHandler,
+    FallbackIntentHandler,
+    NavigateHomeIntentHandler
+  )
+  .addErrorHandlers(
+    ErrorHandler
+  )
+  .lambda();
 
-  const response = await skill.invoke(event, context);
-  console.log(`RESPONSE++++${JSON.stringify(response)}`);
+const skill = skillBuilder.create();
+const adapter = new ExpressAdapter(skill, true, true);
 
-  return response;
-};
+module.exports = adapter;

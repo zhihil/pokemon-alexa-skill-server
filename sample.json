@@ -1,0 +1,115 @@
+{
+	"version": "1.0",
+	"session": {
+		"new": true,
+		"sessionId": "amzn1.echo-api.session.53c851c1-33e2-4d18-a9ce-ebd7660b5bc9",
+		"application": {
+			"applicationId": "amzn1.ask.skill.9ed25ed2-bdd4-4a9e-8dbb-ee40ce8098bb"
+		},
+		"user": {
+			"userId": "amzn1.ask.account.AHHJ23MNVVFVX4UP6MSCTF6OTV7GHUE3Q2NHOIFOKLUPRCW4IC73AER2PF5N3QHSXYIPBLKTXAMYNMMSRFKLVQYPEMXSYX7ZGHDU6MCKTRS5UFUDBU22RF5G5UHJONP7UGVS7YGAHWXO3BDSGM2BPH2YI3GHJ3ZLNBGV6CQDW2NIJDP6LKHABDDMKMVJGKLRD3NUFVWURCEWBZY"
+		}
+	},
+	"context": {
+		"System": {
+			"application": {
+				"applicationId": "amzn1.ask.skill.9ed25ed2-bdd4-4a9e-8dbb-ee40ce8098bb"
+			},
+			"user": {
+				"userId": "amzn1.ask.account.AHHJ23MNVVFVX4UP6MSCTF6OTV7GHUE3Q2NHOIFOKLUPRCW4IC73AER2PF5N3QHSXYIPBLKTXAMYNMMSRFKLVQYPEMXSYX7ZGHDU6MCKTRS5UFUDBU22RF5G5UHJONP7UGVS7YGAHWXO3BDSGM2BPH2YI3GHJ3ZLNBGV6CQDW2NIJDP6LKHABDDMKMVJGKLRD3NUFVWURCEWBZY"
+			},
+			"device": {
+				"deviceId": "amzn1.ask.device.AFBLHY34WZM2QSOXVTXUCW7U3UWNS2ZS7ZEQUHHHL65PZ6CMUTJ3YAJO6QTN2JK35GSOYHMFS4B4RVIHKTCGNFMABV4J7SWXZPRHIKT2TUU3PH7ROXGTS74UNFANQV7JECPFVVWXX6FHRR6J3PCXGXEZJJH3HVDGZKN3PORNAPGGJ7WOKO6OA",
+				"supportedInterfaces": {}
+			},
+			"apiEndpoint": "https://api.amazonalexa.com",
+			"apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjllZDI1ZWQyLWJkZDQtNGE5ZS04ZGJiLWVlNDBjZTgwOThiYiIsImV4cCI6MTU4ODYzODQ1OCwiaWF0IjoxNTg4NjM4MTU4LCJuYmYiOjE1ODg2MzgxNTgsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQUFBK3hvWWUrcW9vVlFjbGJIVkR5TXEvS2dFQUFBQUFBQUFqNFlUc21pb3JERVAxb1J6SCtkelVtWUdvcEt0WG5ETVJmcDJZaDIvWFhaV1ZRbFY4YndHcUhxVlUxV0tReEdZOVFSSXJYUXQ1Tk11UkdHbzV5Y0ZtNDlyd29RNkdsRW1wakNmV0FaR2VZRUtCSkRFVjc0VmxoVldNdEFvaUhoZitkY0pNVkxwWXJwUUEvZE80OFJwVjZlN3ZsY3RoYTJPaWd4ZDl1aXc5V0JDNGZWbWVGaGNrc3l2ejU4bG9FWWtzWGpEQjZZKzlwZXRQejVkeHBjYVYvOWx5Mmc2cWtISnBQOEd1WUdJUWtBNUZnTUZmTWhzbXBpRTdIOG5RcHJWRGJXWXFLdnBIODRMbXo2SFVqMFgxMjhHZWFtcEQ2ZXZIWDZEb1ZUcEl3WEFqWW9QeUZBbmk2aktHaksrcGZ3UnRPbE5VREhXWVJwN1pocnJ3OWJZQVljOWIzK3Q4Q1Z5QmpBR3pCT1pxa0JtaUpGandIK3ZnRjI3NHB6ZVVGbkIyOTAvdTdqM3U2WEJmIiwiY29uc2VudFRva2VuIjpudWxsLCJkZXZpY2VJZCI6ImFtem4xLmFzay5kZXZpY2UuQUZCTEhZMzRXWk0yUVNPWFZUWFVDVzdVM1VXTlMyWlM3WkVRVUhISEw2NVBaNkNNVVRKM1lBSk82UVROMkpLMzVHU09ZSE1GUzRCNFJWSUhLVENHTkZNQUJWNEo3U1dYWlBSSElLVDJUVVUzUEg3Uk9YR1RTNzRVTkZBTlFWN0pFQ1BGVlZXWFg2RkhSUjZKM1BDWEdYRVpKSkgzSFZER1pLTjNQT1JOQVBHR0o3V09LTzZPQSIsInVzZXJJZCI6ImFtem4xLmFzay5hY2NvdW50LkFISEoyM01OVlZGVlg0VVA2TVNDVEY2T1RWN0dIVUUzUTJOSE9JRk9LTFVQUkNXNElDNzNBRVIyUEY1TjNRSFNYWUlQQkxLVFhBTVlOTU1TUkZLTFZRWVBFTVhTWVg3WkdIRFU2TUNLVFJTNVVGVURCVTIyUkY1RzVVSEpPTlA3VUdWUzdZR0FIV1hPM0JEU0dNMkJQSDJZSTNHSEozWkxOQkdWNkNRRFcyTklKRFA2TEtIQUJERE1LTVZKR0tMUkQzTlVGVldVUkNFV0JaWSJ9fQ.jLpVdf8DF5z8lPVyBRxoI_m3C1jRncUVllGzAmO2i1bikCjDoBrbwlB3aX8y1xB4az5hDSLIQXYQPkxOHxn4h2VXX9f5kQ6L_5JQVlveGBbuFL_RSaN9Bm_-etD9L2mAsTTVb1oQTc8-uMAX8If-52i8iHY8ADG-Roid7jfAFE9dVi50IxBW6dm07tKqjp8smLwq1x8w4BcM6pEDkvKveMwl9ChE6I9RPwAOLmPhWeNfQhLB86wcG2R-sMTk9Fdcrjgws_MKAQtqzvJas5ix1FlpD8q-1fK3Fg3QU_wnU9x42U09h5llBGsPhz3tS7JBaO53U6GGtPm7250fg6Kqhg"
+		},
+		"Viewport": {
+			"experiences": [
+				{
+					"arcMinuteWidth": 246,
+					"arcMinuteHeight": 144,
+					"canRotate": false,
+					"canResize": false
+				}
+			],
+			"shape": "RECTANGLE",
+			"pixelWidth": 1024,
+			"pixelHeight": 600,
+			"dpi": 160,
+			"currentPixelWidth": 1024,
+			"currentPixelHeight": 600,
+			"touch": [
+				"SINGLE"
+			],
+			"video": {
+				"codecs": [
+					"H_264_42",
+					"H_264_41"
+				]
+			}
+		},
+		"Viewports": [
+			{
+				"type": "APL",
+				"id": "main",
+				"shape": "RECTANGLE",
+				"dpi": 160,
+				"presentationType": "STANDARD",
+				"canRotate": false,
+				"configuration": {
+					"current": {
+						"video": {
+							"codecs": [
+								"H_264_42",
+								"H_264_41"
+							]
+						},
+						"size": {
+							"type": "DISCRETE",
+							"pixelWidth": 1024,
+							"pixelHeight": 600
+						}
+					}
+				}
+			}
+		]
+	},
+	"request": {
+		"type": "IntentRequest",
+		"requestId": "amzn1.echo-api.request.00b74575-517b-4d98-9b1f-cb6a380a6f93",
+		"timestamp": "2020-05-05T00:22:38Z",
+		"locale": "en-US",
+		"intent": {
+			"name": "pokemon_info",
+			"confirmationStatus": "NONE",
+			"slots": {
+				"pokemon": {
+					"name": "pokemon",
+					"value": "Pikachū",
+					"resolutions": {
+						"resolutionsPerAuthority": [
+							{
+								"authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.9ed25ed2-bdd4-4a9e-8dbb-ee40ce8098bb.pokemon",
+								"status": {
+									"code": "ER_SUCCESS_MATCH"
+								},
+								"values": [
+									{
+										"value": {
+											"name": "pikachu",
+											"id": "9ce44f88a25272b6d9cbb430ebbcfcf1"
+										}
+									}
+								]
+							}
+						]
+					},
+					"confirmationStatus": "NONE",
+					"source": "USER"
+				}
+			}
+		}
+	}
+}
