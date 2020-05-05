@@ -4,7 +4,7 @@ const LaunchRequestHandler = {
   },
 
   handle(handlerInput) {
-    const speechText = "Welcome to your personal PokeDex!";
+    const speechText = "Welcome to your personal PokeDex! What would you like to know about your favorite pokemon?";
 
     return handlerInput.responseBuilder
       .speak(speechText)

@@ -3,7 +3,8 @@ const { ExpressAdapter } = require('ask-sdk-express-adapter');
 
 const CancelAndStopIntentHandler = require("./CancelAndStopIntentHandler");
 const LaunchRequestHandler = require("./LaunchRequestHandler");
-const PokemonIntentHandler = require("./PokemonIntentHandler");
+const PokemonInfoIntentHandler = require("./PokemonInfoIntentHandler");
+const PokemonTraitIntentHandler = require("./PokemonTraitIntentHandler");
 const HelpIntentHandler = require("./HelpIntentHandler");
 const ErrorHandler = require("./ErrorHandler");
 const YesIntentHandler = require("./YesIntentHandler");
@@ -16,7 +17,8 @@ const skillBuilder = Alexa.SkillBuilders.custom();
 
 skillBuilder
   .addRequestHandlers(
-    PokemonIntentHandler,
+    PokemonInfoIntentHandler,
+    PokemonTraitIntentHandler,
     LaunchRequestHandler,
     CancelAndStopIntentHandler,
     HelpIntentHandler,
