@@ -1,20 +1,34 @@
+const axios = require("axios");
+
+const requestPokemonTrait = async function (pokemonName, trait) {
+  return axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+    .then(res => {
+      const { data } = res;
+      if (data[trait]) {
+        return `${pokemonName} has a height of ${String(data[trait])} decimetres`;
+      } else {
+        return `hmm, I'm not sure I know about ${pokemonName}'s ${trait}`;
+      }
+    })
+    .catch(_ => {
+      return`hmm, I'm not sure I know about ${pokemonName}'s ${trait}`;
+    });
+};
+
 const PokemonTraitIntentHandler = {
   canHandle(handlerInput) {
     return handlerInput.requestEnvelope.request.type === 'IntentRequest'
       && handlerInput.requestEnvelope.request.intent.name === 'pokemon_trait';
   },
-  handle(handlerInput) {
+  async handle(handlerInput) {
     const { pokemon, trait } = handlerInput.requestEnvelope.request.intent.slots;
     const pokemonName = pokemon.value;
     const traitName = trait.value;
 
-    let speechText;
+    console.log(pokemonName);
+    console.log(traitName);
 
-    if (pokemonName === "raichu" && traitName === "height") {
-      speechText = "Pikachu has a height of 4. What else would you like to know?"
-    } else {
-      speechText = `hmm, I'm not sure I know about ${pokemonName}'s ${traitName}.`
-    }
+    const speechText = await requestPokemonTrait(pokemonName, traitName);
 
     return handlerInput.responseBuilder
       .speak(speechText)
